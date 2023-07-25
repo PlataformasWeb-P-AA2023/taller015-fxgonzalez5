@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+
+{% block content %}
+  <h2>Crear Departamento para el {{edificio}}</h3>
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {{formulario.as_p}}
+    <p><input type='submit' value='Agregar'/></p>
+  </form>
+{% endblock %}
